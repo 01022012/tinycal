@@ -1,0 +1,68 @@
+@import blueprint
+@import compass/utilities/lists
+
+=ilb
+  display: inline-block 
+  float: none
+  *display: inline
+
+body
+.main_content
+  .half_hour
+    height: 50px
+    border-bottom: 1px gray dotted
+  .odd
+    background-color: #ccc
+  margin-top: 80px
+  +column(24)
+  +last
+  margin: 0px auto
+  float: none
+  display: block
+  a,a:link,a:hover
+    text-decoration: none
+    color: black
+    font-family: arial,helvetica
+  a:hover
+    font-weight: bold
+  .month_days
+    +column(21)
+    +last
+    +ilb
+    .day
+      +column(3)
+      +ilb
+      float: none
+      height: 70px
+      vertical-align: middle
+      text-align: center
+      position: relative
+      .shim
+        height: 70px
+        +ilb
+        vertical-align: middle
+        width: 0px
+      .text
+        +ilb
+        width: 20px
+        margin: 0px auto
+    .last
+      +last
+  .row
+  .month_box:hover
+    background-color: #aaa
+  .month_box
+    +column(6)
+    display: table-cell
+    text-align: center
+    float: none
+    height: 180px
+    vertical-align: middle
+    position: relative
+    .month_display
+      margin: 0px auto
+  .border
+    border: 1px solid gray
+  .last
+    +last
+    margin-right: 0

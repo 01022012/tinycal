@@ -1,0 +1,1169 @@
+
+  
+
+  
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>hcatlin's make_resourceful at rails3 - GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="http://github.com/fluidicon.png" title="GitHub" />
+
+    <link href="http://assets3.github.com/stylesheets/bundle_common.css?b93c68c7f180addad844ab9e069d6cbeea277228" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://assets3.github.com/stylesheets/bundle_github.css?b93c68c7f180addad844ab9e069d6cbeea277228" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" charset="utf-8">
+      var GitHub = {}
+      var github_user = null
+      
+    </script>
+    <script src="http://assets1.github.com/javascripts/jquery/jquery-1.4.2.min.js?b93c68c7f180addad844ab9e069d6cbeea277228" type="text/javascript"></script>
+    <script src="http://assets1.github.com/javascripts/bundle_common.js?b93c68c7f180addad844ab9e069d6cbeea277228" type="text/javascript"></script>
+<script src="http://assets2.github.com/javascripts/bundle_github.js?b93c68c7f180addad844ab9e069d6cbeea277228" type="text/javascript"></script>
+
+        <script type="text/javascript" charset="utf-8">
+      GitHub.spy({
+        repo: "hcatlin/make_resourceful"
+      })
+    </script>
+
+    
+  
+    
+  
+
+  <link href="http://github.com/hcatlin/make_resourceful/commits/rails3.atom" rel="alternate" title="Recent Commits to make_resourceful:rails3" type="application/atom+xml" />
+
+    <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">    <meta name="description" content="Controller abstractor for Rails" />
+    <script type="text/javascript">
+      GitHub.nameWithOwner = GitHub.nameWithOwner || "hcatlin/make_resourceful";
+      GitHub.currentRef = 'rails3';
+    </script>
+  
+
+            <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3769691-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+
+  </head>
+
+  
+
+  <body class="logged_out ">
+    
+
+    
+      <script type="text/javascript">
+        var _kmq = _kmq || [];
+        function _kms(u){
+          var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+          s.src = u; f.parentNode.insertBefore(s, f);
+        }
+        _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/406e8bf3a2b8846ead55afb3cfaf6664523e3a54.1.js');
+      </script>
+    
+
+    
+
+    
+
+    
+
+    <div class="subnavd" id="main">
+      <div id="header" class="true">
+        
+          <a class="logo boring" href="http://github.com">
+            <img src="/images/modules/header/logov3.png?changed" class="default" alt="github" />
+            <![if !IE]>
+            <img src="/images/modules/header/logov3-hover.png" class="hover" alt="github" />
+            <![endif]>
+          </a>
+        
+        
+        <div class="topsearch">
+  
+    <ul class="nav logged_out">
+      <li><a href="http://github.com">Home</a></li>
+      <li class="pricing"><a href="/plans">Pricing and Signup</a></li>
+      <li><a href="http://github.com/training">Training</a></li>
+      <li><a href="http://gist.github.com">Gist</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="https://github.com/login">Login</a></li>
+    </ul>
+  
+</div>
+
+      </div>
+
+      
+      
+        
+    <div class="site">
+      <div class="pagehead repohead vis-public   ">
+        <h1>
+          <a href="/hcatlin">hcatlin</a> / <strong><a href="http://github.com/hcatlin/make_resourceful">make_resourceful</a></strong>
+          
+          
+        </h1>
+
+        
+    <ul class="actions">
+      
+
+      
+        <li class="for-owner" style="display:none"><a href="https://github.com/hcatlin/make_resourceful/edit" class="minibutton btn-admin "><span><span class="icon"></span>Admin</span></a></li>
+        <li>
+          <a href="/hcatlin/make_resourceful/toggle_watch" class="minibutton btn-watch " id="watch_button" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '8617615e34f580c113c087f9292cfe333bf46f72'); f.appendChild(s);f.submit();return false;" style="display:none"><span><span class="icon"></span>Watch</span></a>
+          <a href="/hcatlin/make_resourceful/toggle_watch" class="minibutton btn-watch " id="unwatch_button" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '8617615e34f580c113c087f9292cfe333bf46f72'); f.appendChild(s);f.submit();return false;" style="display:none"><span><span class="icon"></span>Unwatch</span></a>
+        </li>
+        
+          
+            <li class="for-notforked" style="display:none"><a href="/hcatlin/make_resourceful/fork" class="minibutton btn-fork " id="fork_button" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '8617615e34f580c113c087f9292cfe333bf46f72'); f.appendChild(s);f.submit();return false;"><span><span class="icon"></span>Fork</span></a></li>
+            <li class="for-hasfork" style="display:none"><a href="#" class="minibutton btn-fork " id="your_fork_button"><span><span class="icon"></span>Your Fork</span></a></li>
+          
+
+          
+          <li><a href="#" class="minibutton btn-download " id="download_button"><span><span class="icon"></span>Download Source</span></a></li>
+        
+      
+      
+      <li class="repostats">
+        <ul class="repo-stats">
+          <li class="watchers"><a href="/hcatlin/make_resourceful/watchers" title="Watchers" class="tooltipped downwards">191</a></li>
+          <li class="forks"><a href="/hcatlin/make_resourceful/network" title="Forks" class="tooltipped downwards">31</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+        
+  <ul class="tabs">
+    <li><a href="http://github.com/hcatlin/make_resourceful/tree/rails3" class="selected" highlight="repo_source">Source</a></li>
+    <li><a href="http://github.com/hcatlin/make_resourceful/commits/rails3" highlight="repo_commits">Commits</a></li>
+
+    
+    <li><a href="/hcatlin/make_resourceful/network" highlight="repo_network">Network (31)</a></li>
+
+    
+
+    
+      
+      <li><a href="/hcatlin/make_resourceful/issues" highlight="issues">Issues (5)</a></li>
+    
+
+    
+      
+      <li><a href="/hcatlin/make_resourceful/downloads">Downloads (0)</a></li>
+    
+
+                  <li><a href="/hcatlin/make_resourceful/wiki">Wiki (2)</a></li>
+            
+    <li><a href="/hcatlin/make_resourceful/graphs" highlight="repo_graphs">Graphs</a></li>
+
+    <li class="contextswitch nochoices">
+      <span class="toggle leftwards" >
+        <em>Branch:</em>
+        <code>rails3</code>
+      </span>
+    </li>
+  </ul>
+
+  <div style="display:none" id="pl-description"><p><em class="placeholder">click here to add a description</em></p></div>
+  <div style="display:none" id="pl-homepage"><p><em class="placeholder">click here to add a homepage</em></p></div>
+
+  <div class="subnav-bar">
+  
+  <ul>
+    <li>
+      <a href="#" class="dropdown">Switch Branches (2)</a>
+      <ul>
+        
+          
+          
+            <li><a href="/hcatlin/make_resourceful/tree/master" action="show">master</a></li>
+          
+        
+          
+            <li><strong>rails3 &#x2713;</strong></li>
+            
+      </ul>
+    </li>
+    <li>
+      <a href="#" class="dropdown defunct">Switch Tags (0)</a>
+      
+    </li>
+    <li>
+    
+    <a href="/hcatlin/make_resourceful/branches/rails3" class="manage">Branch List</a>
+    
+    </li>
+  </ul>
+</div>
+
+  
+  
+  
+  
+  
+  
+
+
+
+        
+    <div id="repo_details" class="metabox clearfix">
+      <div id="repo_details_loader" class="metabox-loader" style="display:none">Sending Request&hellip;</div>
+
+      
+
+      <div id="repository_description" rel="repository_description_edit">
+        
+          <p>Controller abstractor for Rails
+            <span id="read_more" style="display:none">&mdash; <a href="#readme">Read more</a></span>
+          </p>
+        
+      </div>
+      <div id="repository_description_edit" style="display:none;" class="inline-edit">
+        <form action="/hcatlin/make_resourceful/edit/update" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="8617615e34f580c113c087f9292cfe333bf46f72" /></div>
+          <input type="hidden" name="field" value="repository_description">
+          <input type="text" class="textfield" name="value" value="Controller abstractor for Rails">
+          <div class="form-actions">
+            <button class="minibutton"><span>Save</span></button> &nbsp; <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+
+      
+      <div class="repository-homepage" id="repository_homepage" rel="repository_homepage_edit">
+        <p><a href="http://mr.hamptoncatlin.com" rel="nofollow">http://mr.hamptoncatlin.com</a></p>
+      </div>
+      <div id="repository_homepage_edit" style="display:none;" class="inline-edit">
+        <form action="/hcatlin/make_resourceful/edit/update" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="8617615e34f580c113c087f9292cfe333bf46f72" /></div>
+          <input type="hidden" name="field" value="repository_homepage">
+          <input type="text" class="textfield" name="value" value="http://mr.hamptoncatlin.com">
+          <div class="form-actions">
+            <button class="minibutton"><span>Save</span></button> &nbsp; <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="rule "></div>
+
+            <div id="url_box" class="url-box">
+        <ul class="clone-urls">
+          
+            
+            <li id="http_clone_url"><a href="http://github.com/hcatlin/make_resourceful.git" data-permissions="Read-Only">HTTP</a></li>
+            <li id="public_clone_url"><a href="git://github.com/hcatlin/make_resourceful.git" data-permissions="Read-Only">Git Read-Only</a></li>
+          
+        </ul>
+        <input type="text" spellcheck="false" id="url_field" class="url-field" />
+              <span style="display:none" id="url_box_clippy"></span>
+      <span id="clippy_tooltip_url_box_clippy" class="clippy-tooltip tooltipped" title="copy to clipboard">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+              width="14"
+              height="14"
+              class="clippy"
+              id="clippy" >
+      <param name="movie" value="http://assets1.github.com/flash/clippy.swf?v5"/>
+      <param name="allowScriptAccess" value="always" />
+      <param name="quality" value="high" />
+      <param name="scale" value="noscale" />
+      <param NAME="FlashVars" value="id=url_box_clippy&amp;copied=&amp;copyto=">
+      <param name="bgcolor" value="#FFFFFF">
+      <param name="wmode" value="opaque">
+      <embed src="http://assets1.github.com/flash/clippy.swf?v5"
+             width="14"
+             height="14"
+             name="clippy"
+             quality="high"
+             allowScriptAccess="always"
+             type="application/x-shockwave-flash"
+             pluginspage="http://www.macromedia.com/go/getflashplayer"
+             FlashVars="id=url_box_clippy&amp;copied=&amp;copyto="
+             bgcolor="#FFFFFF"
+             wmode="opaque"
+      />
+      </object>
+      </span>
+
+        <p id="url_description">This URL has <strong>Read+Write</strong> access</p>
+      </div>
+    </div>
+
+
+        
+
+      </div><!-- /.pagehead -->
+
+      
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  GitHub.currentCommitRef = 'rails3'
+  GitHub.currentRepoOwner = 'hcatlin'
+  GitHub.currentRepo = "make_resourceful"
+  GitHub.downloadRepo = '/hcatlin/make_resourceful/archives/rails3'
+  GitHub.revType = "ref"
+
+  GitHub.controllerName = "tree"
+  GitHub.actionName     = "show"
+  GitHub.currentAction  = "tree#show"
+
+  
+
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+  <div id="commit">
+    <div class="group">
+        
+  <div class="envelope commit">
+    <div class="human">
+      
+        <div class="message"><pre><a href="/hcatlin/make_resourceful/commit/a414776b116d891db459b3bc146e644069b29814">fixing the specs for 1.9</a> </pre></div>
+      
+
+      <div class="actor">
+        <div class="gravatar">
+          
+          <img src="http://www.gravatar.com/avatar/a77873df3a9766b208e009248a2a9a56?s=140&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="" width="30" height="30"  />
+        </div>
+        <div class="name"><a href="/hcatlin">hcatlin</a> <span>(author)</span></div>
+        <div class="date">
+          <abbr class="relatize" title="2010-02-11 06:25:59">Thu Feb 11 06:25:59 -0800 2010</abbr>
+        </div>
+      </div>
+
+      
+
+    </div>
+    <div class="machine">
+      <span>c</span>ommit&nbsp;&nbsp;<a href="/hcatlin/make_resourceful/commit/a414776b116d891db459b3bc146e644069b29814" hotkey="c">a414776b116d891db459</a><br />
+      <span>t</span>ree&nbsp;&nbsp;&nbsp;&nbsp;<a href="/hcatlin/make_resourceful/tree/a414776b116d891db459b3bc146e644069b29814" hotkey="t">59659154f41f753cfb12</a><br />
+      
+        <span>p</span>arent&nbsp;
+        
+        <a href="/hcatlin/make_resourceful/tree/352756661e9edd856bcc1aa714033070b32f097d" hotkey="p">352756661e9edd856bcc</a>
+      
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+  
+    <div id="path">
+      <b><a href="/hcatlin/make_resourceful/tree/rails3">make_resourceful</a></b> / 
+    </div>
+
+    
+      
+  <script type="text/javascript">
+    GitHub.currentTreeSHA = "a414776b116d891db459b3bc146e644069b29814";
+    GitHub.commitSHA = "a414776b116d891db459b3bc146e644069b29814";
+    GitHub.currentPath = "";
+  </script>
+
+
+<div id="browser">
+  <table cellpadding="0" cellspacing="0">
+    <tr>
+      <th></th>
+      <th>name</th>
+      <th>age</th>
+      <th>
+        <div class="history">
+          <a href="/hcatlin/make_resourceful/commits/rails3/">history</a>
+        </div>
+        message
+      </th>
+    </tr>
+
+    
+
+    
+            <tr class="alt">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/.gitignore" id="8992126e0145ada885c274f7ce66babaea10b953">.gitignore</a></td>
+        
+        <td class="age"> <span class="relatize">Mon Nov 23 02:48:10 -0800 2009</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/52b6cf2f348ef106d9b9d1da4130e24a9e3735fe" class="message" title="Ignore test app">Ignore test app</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+            <tr class="">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/DEFAULTS" id="7db467439d626d72c490f17e212ebe54ba165a0b">DEFAULTS</a></td>
+        
+        <td class="age"> <span class="relatize">Tue Oct 06 01:49:16 -0700 2009</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/700c797f40659f4cdb15eb20c56790c781806b67" class="message" title="Updated documentation to reflect .all change">Updated documentation to reflect .all change</a> [<a href="/postpostmodern">postpostmodern</a>] </td>
+      </tr>
+    
+            <tr class="alt">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/LICENSE" id="f623619ef853012d24359b4a0da994ffb9c87688">LICENSE</a></td>
+        
+        <td class="age"> <span class="relatize">Tue Feb 09 01:53:41 -0800 2010</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/5c190adccf9c352a4a82c9c054dd7f10ea43bfed" class="message" title="updating license... jeff revoked his">updating license... jeff revoked his</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+            <tr class="">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/README.rdoc" id="1c1f3fdc68c16117c955279152fd05e9af3eaaeb">README.rdoc</a></td>
+        
+        <td class="age"> <span class="relatize">Tue Feb 09 01:53:41 -0800 2010</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/5c190adccf9c352a4a82c9c054dd7f10ea43bfed" class="message" title="updating license... jeff revoked his">updating license... jeff revoked his</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+            <tr class="alt">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/Rakefile" id="932d86d62a6bd80edc7d801ef2c029280ee159c8">Rakefile</a></td>
+        
+        <td class="age"> <span class="relatize">Mon Sep 29 22:00:51 -0700 2008</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/f6815895d72fdef1bd613fc6b5eae066eb6b836e" class="message" title="removed test/unit stuff and make spec default task">removed test/unit stuff and make spec default task</a> [<a href="/adzap">adzap</a>] </td>
+      </tr>
+    
+            <tr class="">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/VERSION" id="6f060dcbc24e32dff9b5911f5dc98f1f4dc64a50">VERSION</a></td>
+        
+        <td class="age"> <span class="relatize">Mon Nov 23 04:05:40 -0800 2009</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/afd76c2e3cc9f2736d2aae8f2e7a02bd50648c42" class="message" title="the best job i could do on specs">the best job i could do on specs</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+            <tr class="alt">
+        <td class="icon"> <img alt="directory" src="http://assets1.github.com/images/icons/dir.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/tree/a414776b116d891db459b3bc146e644069b29814/generators" id="f6d06e900f35b35403a6b513cc9f3d6080ddadfb">generators/</a></td>
+        
+        <td class="age"> <span class="relatize">Mon Nov 23 03:02:04 -0800 2009</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/60e6d850b7b50925143e58189776afd58bfd5113" class="message" title="Making the generated tests pass for resource_scaffold">Making the generated tests pass for resource_sc...</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+            <tr class="">
+        <td class="icon"> <img alt="file" src="http://assets2.github.com/images/icons/txt.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/blob/a414776b116d891db459b3bc146e644069b29814/init.rb" id="773c09ab4073b750917a3cc91a8e7d5562a19a57">init.rb</a></td>
+        
+        <td class="age"> <span class="relatize">Fri Aug 22 10:07:07 -0700 2008</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/470a4c3ed199cd34c2076e29bd476d2bc6dc7e96" class="message" title="initial import from svn">initial import from svn</a> [Hampton Catlin] </td>
+      </tr>
+    
+            <tr class="alt">
+        <td class="icon"> <img alt="directory" src="http://assets1.github.com/images/icons/dir.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/tree/a414776b116d891db459b3bc146e644069b29814/lib" id="5a554227b49629f4d7144c312625c53c254d0a1f">lib/</a></td>
+        
+        <td class="age"> <span class="relatize">Mon Feb 08 04:37:23 -0800 2010</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/d55f607085728a758c0a31072dfc74b79bdf8a0f" class="message" title="Applied changes for Rails 3 where class_attributes were introduced in rails commits 8ae25a8e41168801590fdb95891cc5990b4db21c and e5ab4b0d07ade8d89d633ca744c0eafbc53ee921">Applied changes for Rails 3 where class_attribu...</a> [<a href="/TomK32">TomK32</a>] </td>
+      </tr>
+    
+            <tr class="">
+        <td class="icon"> <img alt="directory" src="http://assets1.github.com/images/icons/dir.png?b93c68c7f180addad844ab9e069d6cbeea277228" /> </td>
+        <td class="content"> <a href="/hcatlin/make_resourceful/tree/a414776b116d891db459b3bc146e644069b29814/spec" id="59a0c96d85205cb1a24813612dfaabd200750ea7">spec/</a></td>
+        
+        <td class="age"> <span class="relatize">Thu Feb 11 06:25:59 -0800 2010</span> </td>
+        <td class="message"> <a href="/hcatlin/make_resourceful/commit/a414776b116d891db459b3bc146e644069b29814" class="message" title="fixing the specs for 1.9">fixing the specs for 1.9</a> [<a href="/hcatlin">hcatlin</a>] </td>
+      </tr>
+    
+  </table>
+</div>
+
+    
+
+  
+
+
+    
+  
+    <div id="readme" class="announce rdoc"><span class="name">README.rdoc</span><div class="wikistyle"><h1>make_resourceful</h1>
+<h5>Take back control of your Controllers. Make them awesome. Make them sleek. Make them resourceful.</h5>
+<p>
+REST is a fine pattern for designing controllers, but it can be pretty
+repetitive. Who wants to write out the same actions and copy the same model
+lookup logic all over their application?
+</p>
+<p>
+make_resourceful handles all that for you. It sets up all your RESTful
+actions and responses with next to no code. Everything has full, sensible
+default functionality.
+</p>
+<p>
+Of course, no controller <em>only</em> uses the defaults. So
+make_resourceful can be massively customized, while still keeping your
+controllers trim and readable.
+</p>
+<h2>Get it!</h2>
+<p>
+Rails
+</p>
+<pre>
+  $ ruby script/plugin install git://github.com/hcatlin/make_resourceful.git
+</pre>
+<p>
+Git
+</p>
+<pre>
+  $ git clone git://github.com/hcatlin/make_resourceful.git
+</pre>
+<h2>Use it!</h2>
+<p>
+The easiest way to start with make_resourceful is to run the
+resource_scaffold generator. It uses the same syntax as the Rails
+scaffold_resource generator:
+</p>
+<pre>
+  $ script/generate resource_scaffold post title:string body:text
+</pre>
+<p>
+It does, however, require <a href="http://haml-lang.com">Haml</a>. You
+<em>are</em> using Haml, right? No? I&#8217;ll wait here while you go fall
+in love with it.
+</p>
+<p>
+If you want to try make_resourceful on one of your current controllers,
+just replace the mess of repetition with this:
+</p>
+<pre>
+  class FooController &lt; ApplicationController
+    make_resourceful do
+      actions :all
+    end
+  end
+</pre>
+<p>
+Those three lines will replace the entire default controller that comes out
+of the scaffold_resource generator.
+</p>
+<h3>Really?</h3>
+<p>
+Yes.
+</p>
+<h3>Can I do nested resources?</h3>
+<pre>
+  make_resourceful do
+    actions :all
+    belongs_to :post
+  end
+</pre>
+<h3>What if I want to use fancy permalinks?</h3>
+<pre>
+  def current_object
+    @current_object ||= current_model.find_by_permalink(params[:id])
+  end
+</pre>
+<h3>What about paging?</h3>
+<pre>
+  def current_objects
+    @current_objects ||= current_model.find(:all,
+      :order =&gt; "created_at DESC", :page =&gt; {:current =&gt; params[:page], :size =&gt; 10 } )
+  end
+</pre>
+<h3>What if I want to do something in the middle of an action?</h3>
+<pre>
+  before :show, :index do
+    @page_title = "Awesome!"
+  end
+
+  after :create_fails do
+    @page_title = "Not So Awesome!"
+  end
+</pre>
+<h3>What about all of my awesome respond_to blocks for my XML APIs and RJS responses?</h3>
+<pre>
+  response_for :show do |format|
+    format.html
+    format.js
+    format.xml
+  end
+
+  response_for :update_fails do |format|
+    format.html { render :action =&gt; 'edit' }
+    format.json { render :json =&gt; false.to_json, :status =&gt; 422 }
+  end
+</pre>
+<h3>So I guess I have to write responses for all my actions?</h3>
+<p>
+Nope! make_resourceful makes them do the right thing by default. You only
+need to customize them if you want to do something special.
+</p>
+<h3>Seriously?!</h3>
+<p>
+Yes!
+</p>
+<h2>Grok it!</h2>
+<h3><tt>make_resourceful</tt> the Method</h3>
+<p>
+The <tt>make_resourceful</tt> block is where most of the action happens.
+Here you specify which actions you want to auto-generate, what code you
+want to run for given callbacks, and so forth.
+</p>
+<p>
+You also use the block to declare various bits of information about your
+controller. For instance, if the controller is nested, you&#8217;d call
+<tt>belongs_to</tt>. If you wanted to expose your models as some sort of
+text format, you&#8217;d call <tt>publish</tt>.
+</p>
+<p>
+Check out the documentation of Resourceful::Builder for more information on
+the methods you can call here.
+</p>
+<h3>Helper Methods</h3>
+<p>
+make_resourceful provides lots of useful methods that can be used in your
+callbacks and in your views. They range from accessing the records
+you&#8217;re looking up to easily generating URLs for a record to getting
+information about the action itself.
+</p>
+<p>
+Two of the most useful methods are <tt>current_object</tt> and
+<tt>current_objects</tt> (note the subtle plurality difference).
+<tt>current_objects</tt> only works for <tt>index</tt>, and returns all the
+records in the current model. <tt>current_object</tt> works for all actions
+other than <tt>index</tt>, and returns the record that&#8217;s currently
+being dealt with.
+</p>
+<p>
+The full documentation of the helper methods is in
+Resourceful::Default::Accessors and Resourceful::Default::URLs.
+</p>
+<h3>Nested Resources</h3>
+<p>
+make_resourceful supports easy management of nested resources. This is set
+up with the Resourceful::Builder#belongs_to declaration. Pass in the name
+of the parent model,
+</p>
+<pre>
+  belongs_to :user
+</pre>
+<p>
+and everything will be taken care of. When <tt>index</tt> is run for GET
+/users/12/albums, parent_object will get
+<tt>User.find(params[:user_id])</tt>, and current_objects will get
+<tt>parent_object.albums</tt>. When <tt>create</tt> is run for POST
+/users/12/albums, the newly created Album will automatically belong to the
+user with id 12.
+</p>
+<p>
+The normal non-scoped actions still work, too. GET /albums/15 runs just
+fine. make_resourceful knows that since there&#8217;s no
+<tt>params[:user_id]</tt>, you just want to deal with the album.
+</p>
+<p>
+You can even have a single resource nested under several different
+resources. Just pass multiple parent names to the
+Resourceful::Builder#belongs_to, like
+</p>
+<pre>
+  belongs_to :user, :artist
+</pre>
+<p>
+Then /users/15/albums and /artists/7/albums will both work.
+</p>
+<p>
+This does, however, mean that make_resourceful only supports one level of
+nesting. There&#8217;s no automatic handling of
+/users/15/collections/437/albums. However, this is really the best way to
+organize most resources anyway; see this <a href="http://weblog.jamisbuck.org/2007/2/5/nesting-resources">article</a>.
+</p>
+<p>
+If you really need a deeply nested controller, it should be easy enough to
+set up on your own. Just override current_model. See the next section for
+more details.
+</p>
+<h3>Overriding Methods</h3>
+<p>
+Not only are helper methods useful to the developer to use, they&#8217;re
+used internally by the actions created by make_resourceful. Thus one of the
+main ways make_resourceful can be customized is by overriding accessors.
+</p>
+<p>
+For instance, if you want to only look up the 10 most recent records for
+<tt>index</tt>, you&#8217;re override <tt>current_objects</tt>. If you
+wanted to use a different model than that suggested by the name of the
+controller, you&#8217;d override <tt>current_model</tt>.
+</p>
+<p>
+When you&#8217;re overriding methods that do SQL lookups, though, be a
+little cautious. By default, these methods cache their values in instance
+variables so that multiple SQL queries aren&#8217;t run on multiple calls.
+When overriding them, it&#8217;s wise for you to do the same. For instance,
+</p>
+<pre>
+  def current_object
+    @current_object ||= current_model.find_by_name(params[:name])
+  end
+</pre>
+<h3>For More Information&#8230;</h3>
+<p>
+Haven&#8217;t found all the information you need in the RDoc? Still a
+little confused about something? Don&#8217;t despair, there are still more
+resources available!
+</p>
+<ul>
+<li>Read the source code! It&#8217;s very straightforward, and make_resourceful
+is built to encourage overriding methods and hacking the source.
+
+</li>
+<li>Nathan Weizenbaum has some good blog posts about make_resourceful. They may
+be a little outdated, but they should still be useful and explanatory.
+
+<ul>
+<li>On nesting and associations: <a href="http://nex-3.com/posts/55-nesting-and-make_resourceful">here</a>.
+
+</li>
+<li>An overview of make_resourceful 0.2.0 and 0.2.2: {here}[<a href="http://localhost:3000/posts/54-make_resourceful-0-2-0">localhost:3000/posts/54-make_resourceful-0-2-0</a>].
+
+</li>
+<li>On Resourceful::Builder#publish and Resourceful::Serialize: <a href="http://nex-3.com/posts/35-make_resourceful-the-basics-of-publish">here</a>
+and <a href="http://nex-3.com/posts/36-make_resourceful-publish-extras">here</a>.
+
+</li>
+</ul>
+</li>
+<li>There&#8217;s an excellent, active Google Group <a href="http://groups.google.com/group/make_resourceful">groups.google.com/group/make_resourceful</a>
+where people will be happy to answer your questions.
+
+</li>
+</ul>
+<hr></hr><p>
+Copyright 2007-2010 Hampton Catlin and Nathan Weizenbaum. Contributions by:
+</p>
+<ul>
+<li>Russell Norris
+
+</li>
+<li>Jonathan Linowes
+
+</li>
+<li>Cristi Balan
+
+</li>
+<li>Mike Ferrier
+
+</li>
+<li>James Golick
+
+</li>
+<li>Don Petersen
+
+</li>
+<li>Alex Ross
+
+</li>
+<li>Tom Stuart
+
+</li>
+<li>Glenn Powell
+
+</li>
+<li>Johannes Jörg Schmidt
+
+</li>
+</ul>
+</div></div>
+  
+
+
+    </div>
+  
+      
+    </div>
+
+    <div id="footer" class="clearfix">
+      <div class="site">
+        <div class="sponsor">
+          <a href="http://www.rackspace.com" class="logo">
+            <img alt="Dedicated Server" src="http://assets2.github.com/images/modules/footer/rackspace_logo.png?b93c68c7f180addad844ab9e069d6cbeea277228" />
+          </a>
+          Powered by the <a href="http://www.rackspace.com ">Dedicated
+          Servers</a> and<br/> <a href="http://www.rackspacecloud.com">Cloud
+          Computing</a> of Rackspace Hosting<span>&reg;</span>
+        </div>
+
+        <ul class="links">
+          <li class="blog"><a href="http://github.com/blog">Blog</a></li>
+          <li><a href="http://support.github.com">Support</a></li>
+          <li><a href="http://github.com/training">Training</a></li>
+          <li><a href="http://jobs.github.com">Job Board</a></li>
+          <li><a href="http://shop.github.com">Shop</a></li>
+          <li><a href="http://github.com/contact">Contact</a></li>
+          <li><a href="http://develop.github.com">API</a></li>
+          <li><a href="http://status.github.com">Status</a></li>
+        </ul>
+        <ul class="sosueme">
+          <li class="main">&copy; 2010 <span id="_rrt" title="0.13566s from fe5.rs.github.com">GitHub</span> Inc. All rights reserved.</li>
+          <li><a href="/site/terms">Terms of Service</a></li>
+          <li><a href="/site/privacy">Privacy</a></li>
+          <li><a href="http://github.com/security">Security</a></li>
+        </ul>
+      </div>
+    </div><!-- /#footer -->
+
+    
+      
+      
+        <!-- current locale:  -->
+        <div class="locales">
+          <div class="site">
+
+            <ul class="choices clearfix limited-locales">
+              <li><span class="current">English</span></li>
+              
+                
+                  <li><a rel="nofollow" href="?locale=de">Deutsch</a></li>
+                
+              
+                
+                  <li><a rel="nofollow" href="?locale=fr">Français</a></li>
+                
+              
+                
+                  <li><a rel="nofollow" href="?locale=ja">日本語</a></li>
+                
+              
+                
+                  <li><a rel="nofollow" href="?locale=pt-BR">Português (BR)</a></li>
+                
+              
+                
+                  <li><a rel="nofollow" href="?locale=ru">Русский</a></li>
+                
+              
+                
+                  <li><a rel="nofollow" href="?locale=zh">中文</a></li>
+                
+              
+              <li class="all"><a href="#" class="minibutton btn-forward js-all-locales"><span><span class="icon"></span>See all available languages</span></a></li>
+            </ul>
+
+            <div class="all-locales clearfix">
+              <h3>Your current locale selection: <strong>English</strong>. Choose another?</h3>
+              
+              
+                <ul class="choices">
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=en">English</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=af">Afrikaans</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=ca">Català</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=cs">Čeština</a></li>
+                    
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=de">Deutsch</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=es">Español</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=fr">Français</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=hr">Hrvatski</a></li>
+                    
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=id">Indonesia</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=it">Italiano</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=ja">日本語</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=nl">Nederlands</a></li>
+                    
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=no">Norsk</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=pl">Polski</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=pt-BR">Português (BR)</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=ru">Русский</a></li>
+                    
+                  
+                </ul>
+              
+                <ul class="choices">
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=sr">Српски</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=sv">Svenska</a></li>
+                    
+                  
+                    
+                      <li><a rel="nofollow" href="?locale=zh">中文</a></li>
+                    
+                  
+                </ul>
+              
+            </div>
+
+          </div>
+          <div class="fade"></div>
+        </div>
+      
+    
+
+    <script>window._auth_token = "8617615e34f580c113c087f9292cfe333bf46f72"</script>
+    <div id="keyboard_shortcuts_pane" style="display:none">
+  <h2>Keyboard Shortcuts</h2>
+
+  <div class="columns threecols">
+    <div class="column first">
+      <h3>Site wide shortcuts</h3>
+      <dl class="keyboard-mappings">
+        <dt>s</dt>
+        <dd>Focus site search</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>?</dt>
+        <dd>Bring up this help dialog</dd>
+      </dl>
+    </div><!-- /.column.first -->
+    <div class="column middle">
+      <h3>Commit list</h3>
+      <dl class="keyboard-mappings">
+        <dt>j</dt>
+        <dd>Move selected down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>k</dt>
+        <dd>Move selected up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>t</dt>
+        <dd>Open tree</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>p</dt>
+        <dd>Open parent</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>c <em>or</em> o <em>or</em> enter</dt>
+        <dd>Open commit</dd>
+      </dl>
+    </div><!-- /.column.first -->
+    <div class="column last">
+      <h3>Pull request list</h3>
+      <dl class="keyboard-mappings">
+        <dt>j</dt>
+        <dd>Move selected down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>k</dt>
+        <dd>Move selected up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>o <em>or</em> enter</dt>
+        <dd>Open issue</dd>
+      </dl>
+    </div><!-- /.columns.last -->
+  </div><!-- /.columns.equacols -->
+
+  <div class="rule"></div>
+
+  <h3>Issues</h3>
+
+  <div class="columns threecols">
+    <div class="column first">
+      <dl class="keyboard-mappings">
+        <dt>j</dt>
+        <dd>Move selected down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>k</dt>
+        <dd>Move selected up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>x</dt>
+        <dd>Toggle select target</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>o <em>or</em> enter</dt>
+        <dd>Open issue</dd>
+      </dl>
+    </div><!-- /.column.first -->
+    <div class="column middle">
+      <dl class="keyboard-mappings">
+        <dt>I</dt>
+        <dd>Mark selected as read</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>U</dt>
+        <dd>Mark selected as unread</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>e</dt>
+        <dd>Close selected</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>y</dt>
+        <dd>Remove selected from view</dd>
+      </dl>
+    </div><!-- /.column.middle -->
+    <div class="column last">
+      <dl class="keyboard-mappings">
+        <dt>c</dt>
+        <dd>Create issue</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>l</dt>
+        <dd>Create label</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>i</dt>
+        <dd>Back to inbox</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>u</dt>
+        <dd>Back to issues</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>/</dt>
+        <dd>Focus issues search</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <h3>Network Graph</h3>
+  <div class="columns equacols">
+    <div class="column first">
+      <dl class="keyboard-mappings">
+        <dt>← <em>or</em> h</dt>
+        <dd>Scroll left</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>→ <em>or</em> l</dt>
+        <dd>Scroll right</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>↑ <em>or</em> k</dt>
+        <dd>Scroll up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>↓ <em>or</em> j</dt>
+        <dd>Scroll down</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>t</dt>
+        <dd>Toggle visibility of head labels</dd>
+      </dl>
+    </div><!-- /.column.first -->
+    <div class="column last">
+      <dl class="keyboard-mappings">
+        <dt>shift ← <em>or</em> shift h</dt>
+        <dd>Scroll all the way left</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>shift → <em>or</em> shift l</dt>
+        <dd>Scroll all the way right</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>shift ↑ <em>or</em> shift k</dt>
+        <dd>Scroll all the way up</dd>
+      </dl>
+      <dl class="keyboard-mappings">
+        <dt>shift ↓ <em>or</em> shift j</dt>
+        <dd>Scroll all the way down</dd>
+      </dl>
+    </div><!-- /.column.last -->
+  </div>
+
+</div>
+    
+
+    <!--[if IE 8]>
+    <script type="text/javascript" charset="utf-8">
+      $(document.body).addClass("ie8")
+    </script>
+    <![endif]-->
+
+    <!--[if IE 7]>
+    <script type="text/javascript" charset="utf-8">
+      $(document.body).addClass("ie7")
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+      _kmq.push(['trackClick', 'entice_banner_link', 'Entice banner clicked']);
+      
+    </script>
+    
+  </body>
+</html>
+

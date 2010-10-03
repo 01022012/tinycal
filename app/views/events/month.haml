@@ -1,0 +1,25 @@
+.month_days><
+  - index = @now.at_beginning_of_month.wday - 1
+  - ( index + 1).times do
+    .day><
+      .shim
+      .text
+        X
+    - index+=1
+  - ( @now.at_beginning_of_month.day..@now.at_end_of_month.day ).each do |day|
+    -link_to day_url(:month=>@now.month,:day=>index+1) do
+      .day{:class=>index > 5?"last":""}><
+        .shim
+        .text
+          = day
+
+      - if index > 5
+        - index = 0 
+      -else
+        - index += 1
+  - (6 - @now.at_end_of_month.wday ).times do |n|
+    .day{:class=>index > 5?"text last":""}><
+      .shim
+      .text
+        X
+      - index += 1

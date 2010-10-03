@@ -1,0 +1,13 @@
+- (1..3).each do |y|
+  .row
+    -(1..4).each do |x|
+      - if x == 4
+        -link_to url_for(:controller=>'events',:actions=>'month',:id=> x*y) do
+          .month_box.last><
+            .month_display
+              = @mlist[x*y-1]
+      - else
+        -link_to url_for(:controller=>'events',:actions=>'month',:id=> x*y) do
+          .month_box><
+            .month_display
+              = @mlist[x*y-1]

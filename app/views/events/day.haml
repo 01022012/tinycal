@@ -1,0 +1,6 @@
+.title
+  Today...
+- (0..48).each do |i|
+  .half_hour{:class=> i%2 > 0 ? 'odd' : '' }
+    = "%02d" % ((i != 48) ? (i / 2).to_i : 0)
+    = i % 2 > 0 ? ":30" : ":00"

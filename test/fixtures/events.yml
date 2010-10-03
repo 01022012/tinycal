@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first: 2010-09-28 09:45:51
+  recurring_type_id: 1
+  description: MyText
+
+two:
+  first: 2010-09-28 09:45:51
+  recurring_type_id: 1
+  description: MyText
