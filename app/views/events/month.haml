@@ -5,13 +5,21 @@
       .shim
       .text
         X
+        .event_count
+          &nbsp;
     - index+=1
   - ( @now.at_beginning_of_month.day..@now.at_end_of_month.day ).each do |day|
-    -link_to day_url(:month=>@now.month,:day=>index+1) do
+    -link_to day_url(:month=>@now.month,:day=>day) do
       .day{:class=>index > 5?"last":""}><
         .shim
         .text
           = day
+          - if @days[day - 1]
+            .day_count.marked
+              = @days[day - 1].count
+          - else
+            .day_count
+              &nbsp;
 
       - if index > 5
         - index = 0 
@@ -22,4 +30,6 @@
       .shim
       .text
         X
+        .event_count
+          &nbsp;
       - index += 1

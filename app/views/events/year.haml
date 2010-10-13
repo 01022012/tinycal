@@ -2,12 +2,24 @@
   .row
     -(1..4).each do |x|
       - if x == 4
-        -link_to url_for(:controller=>'events',:actions=>'month',:id=> x*y) do
+        -link_to month_url :month=> x*y do
           .month_box.last><
             .month_display
               = @mlist[x*y-1]
+              -unless @months[x*y - 1].nil?
+                .event_count.marked
+                  = @months[x*y - 1 ].count
+              -else
+                .event_count
+                  &nbsp;
       - else
-        -link_to url_for(:controller=>'events',:actions=>'month',:id=> x*y) do
+        -link_to month_url :month => x*y do
           .month_box><
             .month_display
               = @mlist[x*y-1]
+              -unless @months[x*y - 1].nil?
+                .event_count.marked
+                  = @months[x*y - 1].count
+              -else
+                .event_count
+                  &nbsp;

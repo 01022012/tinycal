@@ -1,4 +1,6 @@
 Calendar::Application.routes.draw do
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -6,8 +8,10 @@ Calendar::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
+  resources :events
   match 'day/:month/:day' => 'events#day',:as => 'day'
-
+  match 'new/:month/:day' => 'events#new',:as => 'new_ev'
+  match 'month/:month' => 'events#month',:as => 'month'
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
@@ -50,7 +54,7 @@ Calendar::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "events#index"
+  root :to => "events#year"
 
 
   # See how all your routes lay out with "rake routes"

@@ -39,7 +39,7 @@ test:
   encoding: unicode
   database: calendar_test
   pool: 5
-  username: ubuntu
+  username: pavel
   password:
 
 production:
@@ -47,5 +47,5 @@ production:
   encoding: unicode
   database: calendar_production
   pool: 5
-  username: ubuntu
+  username: pavel
   password:

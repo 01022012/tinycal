@@ -1,2 +1,0 @@
-describe EventsController do
-end

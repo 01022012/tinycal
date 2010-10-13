@@ -1,4 +1,4 @@
-/* line 10, ../../../app/stylesheets/calendar.sass */
+/* line 11, ../../../app/stylesheets/calendar.sass */
 .main_content {
   margin-top: 80px;
   display: inline;
@@ -10,30 +10,162 @@
   float: none;
   display: block;
 }
-/* line 11, ../../../app/stylesheets/calendar.sass */
+/* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form label {
+  font-weight: bold;
+}
+/* line 19, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form fieldset {
+  padding: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+/* line 20, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form legend {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 26, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input.text, .main_content form input.title, .main_content form input[type=email], .main_content form input[type=text], .main_content form input[type=password] {
+  margin: 0.5em 0;
+  background-color: white;
+  padding: 5px;
+}
+/* line 27, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input.title {
+  font-size: 1.5em;
+}
+/* line 31, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input[type=checkbox], .main_content form input.checkbox, .main_content form input[type=radio], .main_content form input.radio {
+  position: relative;
+  top: 0.25em;
+}
+/* line 33, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form textarea {
+  margin: 0.5em 0;
+  padding: 5px;
+}
+/* line 34, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form select {
+  margin: 0.5em 0;
+}
+/* line 59, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form fieldset {
+  border: 1px solid #cccccc;
+}
+/* line 62, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input.text, .main_content form input.title, .main_content form input[type=email], .main_content form input[type=text], .main_content form input[type=password],
+.main_content form textarea, .main_content form select {
+  border: 1px solid #bbbbbb;
+}
+/* line 64, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input.text:focus, .main_content form input.title:focus, .main_content form input[type=email]:focus, .main_content form input[type=text]:focus, .main_content form input[type=password]:focus,
+.main_content form textarea:focus, .main_content form select:focus {
+  border: 1px solid #666666;
+}
+/* line 48, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form input.text, .main_content form input.title, .main_content form input[type=email], .main_content form input[type=text], .main_content form input[type=password] {
+  width: 300px;
+}
+/* line 50, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+.main_content form textarea {
+  width: 390px;
+  height: 250px;
+}
+/* line 14, ../../../app/stylesheets/calendar.sass */
+.main_content form label {
+  vertical-align: top;
+  padding: 10px;
+}
+/* line 18, ../../../app/stylesheets/calendar.sass */
+.main_content form .datetime li {
+  display: inline-block;
+  float: none;
+  *display: inline;
+  margin: 5px;
+}
+/* line 21, ../../../app/stylesheets/calendar.sass */
+.main_content form .datetime li label {
+  display: none;
+}
+/* line 23, ../../../app/stylesheets/calendar.sass */
+.main_content form .datetime li select {
+  width: 100px;
+  display: inline-block;
+  float: none;
+  *display: inline;
+}
+/* line 26, ../../../app/stylesheets/calendar.sass */
+.main_content .title {
+  font-size: 25px;
+  padding: 10px 10px;
+}
+/* line 29, ../../../app/stylesheets/calendar.sass */
+.main_content .title .title_edit_control {
+  float: right;
+}
+/* line 31, ../../../app/stylesheets/calendar.sass */
+.main_content .day_count, .main_content .event_count {
+  margin-top: 2px;
+  padding: 2px;
+}
+/* line 34, ../../../app/stylesheets/calendar.sass */
+.main_content .marked {
+  background-color: #bbbbdd;
+}
+/* line 36, ../../../app/stylesheets/calendar.sass */
 .main_content .half_hour {
   height: 50px;
   border-bottom: 1px gray dotted;
+  display: block;
+  position: relative;
 }
-/* line 14, ../../../app/stylesheets/calendar.sass */
+/* line 41, ../../../app/stylesheets/calendar.sass */
+.main_content .half_hour .event_block {
+  overflow-y: auto;
+  position: absolute;
+  top: 0px;
+  height: 100px;
+  width: 200px;
+  z-index: 50;
+  border: 1px solid #aaaaaa;
+  background-color: #dddddd;
+}
+/* line 42, ../../../app/stylesheets/calendar.sass */
+.main_content .half_hour .event_block .time {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 2px;
+}
+/* line 57, ../../../app/stylesheets/calendar.sass */
+.main_content .half_hour .event_block .edit_box {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 2px;
+  background-color: #cccccc;
+}
+/* line 64, ../../../app/stylesheets/calendar.sass */
 .main_content .odd {
   background-color: #cccccc;
 }
-/* line 139, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .main_content {
   overflow-x: hidden;
 }
-/* line 22, ../../../app/stylesheets/calendar.sass */
+/* line 72, ../../../app/stylesheets/calendar.sass */
 .main_content a, .main_content a:link, .main_content a:hover {
   text-decoration: none;
   color: black;
   font-family: arial, helvetica;
 }
-/* line 26, ../../../app/stylesheets/calendar.sass */
+/* line 76, ../../../app/stylesheets/calendar.sass */
 .main_content a:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
-/* line 28, ../../../app/stylesheets/calendar.sass */
+/* line 78, ../../../app/stylesheets/calendar.sass */
 .main_content .month_days {
   display: inline;
   float: left;
@@ -44,11 +176,11 @@
   float: none;
   *display: inline;
 }
-/* line 139, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .main_content .month_days {
   overflow-x: hidden;
 }
-/* line 32, ../../../app/stylesheets/calendar.sass */
+/* line 82, ../../../app/stylesheets/calendar.sass */
 .main_content .month_days .day {
   display: inline;
   float: left;
@@ -63,11 +195,11 @@
   text-align: center;
   position: relative;
 }
-/* line 139, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .main_content .month_days .day {
   overflow-x: hidden;
 }
-/* line 40, ../../../app/stylesheets/calendar.sass */
+/* line 90, ../../../app/stylesheets/calendar.sass */
 .main_content .month_days .day .shim {
   height: 70px;
   display: inline-block;
@@ -76,7 +208,7 @@
   vertical-align: middle;
   width: 0px;
 }
-/* line 45, ../../../app/stylesheets/calendar.sass */
+/* line 95, ../../../app/stylesheets/calendar.sass */
 .main_content .month_days .day .text {
   display: inline-block;
   float: none;
@@ -84,15 +216,15 @@
   width: 20px;
   margin: 0px auto;
 }
-/* line 49, ../../../app/stylesheets/calendar.sass */
+/* line 99, ../../../app/stylesheets/calendar.sass */
 .main_content .month_days .last {
   margin-right: 0;
 }
-/* line 52, ../../../app/stylesheets/calendar.sass */
+/* line 102, ../../../app/stylesheets/calendar.sass */
 .main_content .month_box:hover {
   background-color: #aaaaaa;
 }
-/* line 54, ../../../app/stylesheets/calendar.sass */
+/* line 104, ../../../app/stylesheets/calendar.sass */
 .main_content .month_box {
   display: inline;
   float: left;
@@ -105,19 +237,19 @@
   vertical-align: middle;
   position: relative;
 }
-/* line 139, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 139, ../../../../../../../usr/local/lib/ruby/gems/1.9.1/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .main_content .month_box {
   overflow-x: hidden;
 }
-/* line 62, ../../../app/stylesheets/calendar.sass */
+/* line 112, ../../../app/stylesheets/calendar.sass */
 .main_content .month_box .month_display {
   margin: 0px auto;
 }
-/* line 64, ../../../app/stylesheets/calendar.sass */
+/* line 114, ../../../app/stylesheets/calendar.sass */
 .main_content .border {
   border: 1px solid gray;
 }
-/* line 66, ../../../app/stylesheets/calendar.sass */
+/* line 116, ../../../app/stylesheets/calendar.sass */
 .main_content .last {
   margin-right: 0;
   margin-right: 0;

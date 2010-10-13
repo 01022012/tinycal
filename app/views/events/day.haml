@@ -1,6 +1,23 @@
 .title
-  Today...
+  = @now.strftime("%d %B, %Y")
+  .title_edit_control
+    - link_to new_ev_path( :month=>params[:month], :day=>params[:day] ) do
+      \.: Add New Event :.
 - (0..48).each do |i|
   .half_hour{:class=> i%2 > 0 ? 'odd' : '' }
     = "%02d" % ((i != 48) ? (i / 2).to_i : 0)
     = i % 2 > 0 ? ":30" : ":00"
+    - unless @event_map[i].nil? or @event_map[i].empty?
+      - shift = 0
+      - @event_map[i].each do |e|
+        .event_block{:style=>"left:"+(100+(210*shift)).to_s + "px"}
+          .time{:anchor => shift}
+            @
+            = e.first.strftime("%H:%M")
+          = e.description
+          .edit_box
+            -link_to edit_event_url(e)  do
+              Edit
+            - link_to event_url(e),:method=>'delete' do
+              Delete
+        - shift += 1
